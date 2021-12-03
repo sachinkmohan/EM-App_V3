@@ -4,6 +4,7 @@ import { createStackNavigator } from "@react-navigation/stack";
 
 import Introduction from "../screens/Introduction";
 import Categories from "../screens/Categories";
+import ConfusedLetters from "../screens/ConfusedLetters";
 
 const EMStack = createStackNavigator();
 
@@ -13,6 +14,7 @@ const AppNavigator = () => {
 			<EMStack.Navigator>
 				<EMStack.Screen name="Home" component={Introduction} />
 				<EMStack.Screen name="Category" component={Categories} />
+				<EMStack.Screen name="Confused" component={ConfusedLetters} />
 			</EMStack.Navigator>
 		</NavigationContainer>
 	);
