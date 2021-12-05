@@ -1,23 +1,41 @@
 import React from "react";
 
-import { View, Text, Button, Image, StyleSheet } from "react-native";
+import {
+	View,
+	Text,
+	Button,
+	Image,
+	StyleSheet,
+	ScrollView,
+} from "react-native";
 
 const Categories = ({ navigation }) => {
 	return (
-		<View style={styles.container}>
-			<Text style={styles.textHeader}>Most Confused Letters</Text>
-			<Image
-				source={require("../assets/images/confused-letters.png")}
-				style={{ height: 200, width: 320, justifyContent: "space-evenly" }}
-			/>
-			<Button title="More.." onPress={() => navigation.navigate("Confused")} />
-			<Text style={styles.textHeader}>Most used Grammar</Text>
-			<Image
-				source={require("../assets/images/confused-letters.png")}
-				style={{ height: 200, width: 320, justifyContent: "space-evenly" }}
-			/>
-			<Button title="More.." onPress={() => navigation.navigate("Confused")} />
-		</View>
+		<ScrollView>
+			<View style={styles.container}>
+				<Text style={styles.textHeader}>Most Confused Letters</Text>
+				<Image
+					source={require("../assets/images/shabdam/confused-letter.png")}
+					style={{ height: 240, width: 320, justifyContent: "space-evenly" }}
+				/>
+				<Button title="Show" onPress={() => navigation.navigate("Confused")} />
+				<Text style={styles.textHeader}>Most Used Grammar</Text>
+				<Image
+					source={require("../assets/images/grammar/most-used-grammar.png")}
+					style={{ height: 240, width: 320, justifyContent: "space-evenly" }}
+				/>
+				<Button title="Show" onPress={() => navigation.navigate("Grammar")} />
+				<Text style={styles.textHeader}>Past and Future</Text>
+				<Image
+					source={require("../assets/images/grammar/past-and-future.png")}
+					style={{ height: 240, width: 320, justifyContent: "space-evenly" }}
+				/>
+				<Button
+					title="Show"
+					onPress={() => navigation.navigate("PastFuture")}
+				/>
+			</View>
+		</ScrollView>
 	);
 };
 

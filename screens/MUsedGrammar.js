@@ -3,24 +3,24 @@ import React from "react";
 import { View, Text, Button, Image, StyleSheet } from "react-native";
 import { ScrollView } from "react-native-gesture-handler";
 
-const ConfusedLetters = ({ navigation }) => {
+const MUsedGrammar = ({ navigation }) => {
 	return (
 		<ScrollView>
 			<View style={styles.movetoCenter}>
-				<Text style={styles.boldtext}>Most Confused Letters</Text>
+				<Text style={styles.boldtext}>Most Used Grammar</Text>
 				<Text style={styles.text}>
-					{"\n"} -First one is ല and ള {"\n"}
+					{"\n"} Ways to say no in Malayalam {"\n"}
 				</Text>
 				<Image
-					source={require("../assets/images/shabdam/laSounds.jpeg")}
-					style={{ height: 300, width: 260, paddingLeft: 50 }}
+					source={require("../assets/images/grammar/saying-no.jpeg")}
+					style={{ height: 320, width: 300, paddingLeft: 50 }}
 				/>
 				<Text style={styles.text}>
-					{"\n"}- Second one is ര and റ {"\n"}
+					{"\n"} Enikku and Njan - The Difference {"\n"}
 				</Text>
 				<Image
-					source={require("../assets/images/shabdam/raSounds.jpeg")}
-					style={{ height: 300, width: 260, paddingLeft: 50 }}
+					source={require("../assets/images/grammar/enikku-njan.jpeg")}
+					style={{ height: 320, width: 260, paddingLeft: 50 }}
 				/>
 			</View>
 		</ScrollView>
@@ -43,4 +43,4 @@ const styles = StyleSheet.create({
 		alignItems: "center",
 	},
 });
-export default ConfusedLetters;
+export default MUsedGrammar;
