@@ -17,13 +17,18 @@
 		},
 		"assetBundlePatterns": ["assets/**/*"],
 		"ios": {
+			"bundleIdentifier": "fun.easymalayalam.em-app",
+			"buildNumber": "1.0.0",
 			"supportsTablet": true
 		},
 		"android": {
+			"package": "fun.easymalayalam.em_app",
+			"versionCode": 1,
 			"adaptiveIcon": {
 				"foregroundImage": "./assets/adaptive-icon.png",
 				"backgroundColor": "#FFFFFF"
-			}
+			},
+			"permissions": ["WRITE_EXTERNAL_STORAGE"]
 		},
 		"web": {
 			"favicon": "./assets/favicon.png"

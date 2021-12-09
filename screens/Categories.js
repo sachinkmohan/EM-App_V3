@@ -15,19 +15,19 @@ const Categories = ({ navigation }) => {
 			<View style={styles.container}>
 				<Text style={styles.textHeader}>Most Confused Letters</Text>
 				<Image
-					source={require("../assets/images/shabdam/confused-letter.png")}
+					source={require("../assets/images/shabdam/confused-letters.jpg")}
 					style={{ height: 240, width: 320, justifyContent: "space-evenly" }}
 				/>
 				<Button title="Show" onPress={() => navigation.navigate("Confused")} />
 				<Text style={styles.textHeader}>Most Used Grammar</Text>
 				<Image
-					source={require("../assets/images/grammar/most-used-grammar.png")}
+					source={require("../assets/images/grammar/most-used-grammars.jpg")}
 					style={{ height: 240, width: 320, justifyContent: "space-evenly" }}
 				/>
 				<Button title="Show" onPress={() => navigation.navigate("Grammar")} />
 				<Text style={styles.textHeader}>Past and Future</Text>
 				<Image
-					source={require("../assets/images/grammar/past-and-future.png")}
+					source={require("../assets/images/grammar/past-and-futures.jpg")}
 					style={{ height: 240, width: 320, justifyContent: "space-evenly" }}
 				/>
 				<Button

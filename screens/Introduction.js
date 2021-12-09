@@ -18,7 +18,7 @@ const Introduction = ({ navigation }) => {
 				started.
 			</Text>
 			<Image
-				source={require("../assets/images/home.png")}
+				source={require("../assets/images/homes.jpg")}
 				style={{ height: "50%", width: "90%", justifyContent: "space-evenly" }}
 			/>
 			<Button

@@ -11,12 +11,19 @@ const ConfusedLetters = ({ navigation }) => {
 				<Text style={styles.text}>
 					{"\n"} -First one is ല and ള {"\n"}
 				</Text>
+				<Text></Text>
 				<Image
 					source={require("../assets/images/shabdam/laSounds.jpeg")}
 					style={{ height: 300, width: 260, paddingLeft: 50 }}
 				/>
 				<Text style={styles.text}>
 					{"\n"}- Second one is ര and റ {"\n"}
+				</Text>
+				<Text>
+					Ra or ര is made by touching the tip of the tongue to the hard pallette
+					just behind the teeth creating a soft sound whereas Ra or റ is similar
+					to rolling R sound which is made by vibrating the tongue behind the
+					teeth similar to Arabic & Spanish.
 				</Text>
 				<Image
 					source={require("../assets/images/shabdam/raSounds.jpeg")}
