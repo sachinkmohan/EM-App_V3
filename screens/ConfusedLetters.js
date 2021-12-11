@@ -1,44 +1,94 @@
 import React from "react";
 
-import { View, Text, Button, Image, StyleSheet } from "react-native";
+import {
+	View,
+	Text,
+	Button,
+	Image,
+	StyleSheet,
+	Dimensions,
+} from "react-native";
 import { ScrollView } from "react-native-gesture-handler";
+
+import { dstyles } from "../styles/DefaultStyle";
+var screenWidth = Dimensions.get("window").width;
 
 const ConfusedLetters = ({ navigation }) => {
 	return (
 		<ScrollView>
 			<View style={styles.movetoCenter}>
-				<Text style={styles.boldtext}>Most Confused Letters</Text>
-				<Text style={styles.text}>
-					{"\n"} -First one is ല and ള {"\n"}
+				<Text style={dstyles.h1}>Most Confused Letters</Text>
+				<Text style={[dstyles.h2, dstyles.bold, styles.text]}>
+					{"\n"} Letter's <Text style={{ fontSize: 30 }}>ല & ള </Text> {"\n"}
 				</Text>
 				<Text></Text>
 				<Image
-					source={require("../assets/images/shabdam/laSounds.jpeg")}
-					style={{ height: 300, width: 260, paddingLeft: 50 }}
+					source={require("../assets/images/shabdam/La.png")}
+					style={{
+						height: 400,
+						width: screenWidth,
+						resizeMode: "contain",
+						marginTop: -30.0,
+					}}
 				/>
-				<Text style={styles.text}>
-					{"\n"}- Second one is ര and റ {"\n"}
+				<Text style={dstyles.text}>
+					<Text style={styles.malLetters}>La or ല</Text> sound is produced by
+					placing the tongue behind the teeth. Whereas{" "}
+					<Text style={styles.malLetters}>La or ള</Text> is produced by curling
+					your tongue back and touching it on the soft part(soft palate) of the
+					mouth. Refer the images above for better understanding of the tongue
+					placement.
 				</Text>
-				<Text>
-					Ra or ര is made by touching the tip of the tongue to the hard pallette
-					just behind the teeth creating a soft sound whereas Ra or റ is similar
-					to rolling R sound which is made by vibrating the tongue behind the
-					teeth similar to Arabic & Spanish.
+				<Text style={[dstyles.h2, dstyles.bold, styles.text]}>
+					{"\n"} Letter's <Text style={{ fontSize: 30 }}>ര & റ </Text> {"\n"}
 				</Text>
+				<Text></Text>
 				<Image
-					source={require("../assets/images/shabdam/raSounds.jpeg")}
-					style={{ height: 300, width: 260, paddingLeft: 50 }}
+					source={require("../assets/images/shabdam/Ra.png")}
+					style={{
+						height: 400,
+						width: screenWidth,
+						resizeMode: "contain",
+						marginTop: -30.0,
+					}}
 				/>
+				<Text style={dstyles.text}>
+					<Text style={styles.malLetters}>Ra or ര</Text> is produced by touching
+					the tip of the tongue on the hard palate just behind the teeth
+					creating a soft sound whereas{" "}
+					<Text style={styles.malLetters}>Ra or റ</Text> is similar to the
+					rolling R sound which is made by vibrating the tongue behind the teeth
+					similar to Arabic & Spanish.
+				</Text>
+				<Text style={[dstyles.h2, dstyles.bold, styles.text]}>
+					{"\n"} Letter's <Text style={{ fontSize: 30 }}> ന & ണ </Text> {"\n"}
+				</Text>
+				<Text></Text>
+				<Image
+					source={require("../assets/images/shabdam/Na.png")}
+					style={{
+						height: 400,
+						width: screenWidth,
+						resizeMode: "contain",
+						marginTop: -30.0,
+					}}
+				/>
+				<Text style={dstyles.text}>
+					<Text style={styles.malLetters}>Na or ന</Text> is produced by placing
+					the tongue behind the teeth. Whereas the{" "}
+					<Text style={styles.malLetters}>Na or ണ</Text>
+					sound is produced by touching the tongue to the retroflex of the
+					mouth.
+				</Text>
 			</View>
 		</ScrollView>
 	);
 };
 
 const styles = StyleSheet.create({
-	boldtext: {
+	malLetters: {
 		fontWeight: "bold",
-		paddingLeft: 10,
-		fontSize: 20,
+		fontSize: 23,
 	},
 	text: {
 		paddingLeft: 15,

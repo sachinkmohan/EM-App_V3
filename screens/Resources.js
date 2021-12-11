@@ -3,29 +3,44 @@ import React from "react";
 import { View, Text, Button, Image, StyleSheet, Linking } from "react-native";
 import { ScrollView } from "react-native-gesture-handler";
 
-import HyperLink from "react-native-hyperlink";
+import { dstyles, buttons } from "../styles/DefaultStyle";
 
 const Resources = ({ navigation }) => {
 	return (
 		<ScrollView>
-			<View style={styles.movetoCenter}>
-				<Text style={styles.h2}>YouTube {"\n"}</Text>
-				<Text style={styles.text}>
-					1. Fluent in Malayalam
+			<View>
+				<Text style={dstyles.h1}> Content Creators of Malayalam {"\n"}</Text>
+				<Text style={dstyles.text}>
+					<Text style={dstyles.bold}>1. Fluent in Malayalam -</Text> If you are
+					looking for content which are absolutely necessary for the beginner's
+					then this is one of the best channel for you. Her media presence are
 					<Text
-						style={styles.hyperlink}
+						style={[styles.hyperlink, dstyles.text]}
 						onPress={() => {
 							Linking.openURL("https://www.youtube.com/c/FluentinMalayalam");
 						}}
 					>
 						{" "}
-						- Source {"\n"}
+						YouTube
 					</Text>
-				</Text>
-				<Text style={styles.text}>
-					2. Laa Laa Language
+					{","}
 					<Text
-						style={styles.hyperlink}
+						style={[styles.hyperlink, dstyles.text]}
+						onPress={() => {
+							Linking.openURL("https://www.instagram.com/fluentinmalayalam");
+						}}
+					>
+						{" "}
+						Instagram
+					</Text>{" "}
+					{"\n"}
+				</Text>
+
+				<Text style={dstyles.text}>
+					<Text style={dstyles.bold}>2. La La Language -</Text> This channel
+					focuses on reading Malayalam and Grammar. Their media presence are
+					<Text
+						style={[styles.hyperlink, dstyles.text]}
 						onPress={() => {
 							Linking.openURL(
 								"https://www.youtube.com/channel/UCDAfMBnXBXtYLJ8XpPvnIkg"
@@ -33,13 +48,18 @@ const Resources = ({ navigation }) => {
 						}}
 					>
 						{" "}
-						- Source {"\n"}
+						YouTube
 					</Text>
+					{"\n"}
 				</Text>
-				<Text style={styles.text}>
-					3. Learn Malayalam with Elikutty
+				<Text style={dstyles.text}>
+					<Text style={dstyles.bold}>3. Learn Malayalam with Elikutty</Text>{" "}
+					Elikutty or Elizabeth Keyton is an American whose is so passionate
+					about learning and teaching. She relentlessly creates new content
+					which are useful for all level of Malayalam language learners. Her
+					media presence are
 					<Text
-						style={styles.hyperlink}
+						style={[styles.hyperlink, dstyles.text]}
 						onPress={() => {
 							Linking.openURL(
 								"https://www.youtube.com/channel/UC32ejuUaeWoE5F9sdRN1kVw"
@@ -47,56 +67,59 @@ const Resources = ({ navigation }) => {
 						}}
 					>
 						{" "}
-						- Source {"\n"}
+						YouTube
 					</Text>
-				</Text>
-				<Text style={styles.h2}>Instagram {"\n"}</Text>
-				<Text style={styles.text}>
-					1. Fluent in Malayalam
+					{","}
 					<Text
-						style={styles.hyperlink}
-						onPress={() => {
-							Linking.openURL("https://www.instagram.com/fluentinmalayalam/");
-						}}
-					>
-						{" "}
-						- Source {"\n"}
-					</Text>
-				</Text>
-				<Text style={styles.text}>
-					2. Learn Malayalam with Elikutty
-					<Text
-						style={styles.hyperlink}
+						style={[styles.hyperlink, dstyles.text]}
 						onPress={() => {
 							Linking.openURL("https://www.instagram.com/eli.kutty/");
 						}}
 					>
 						{" "}
-						- Source {"\n"}
-					</Text>
+						Instagram
+					</Text>{" "}
+					{"\n"}
 				</Text>
-				<Text style={styles.text}>
-					3. Easy Malayalam
+				<Text style={dstyles.text}>
+					<Text style={dstyles.bold}>4. Easy Malayalam</Text> Sachin along with
+					his wonderful team of four creates content which are fun and easy to
+					comprehend. Their media presence are
 					<Text
-						style={styles.hyperlink}
+						style={[styles.hyperlink, dstyles.text]}
+						onPress={() => {
+							Linking.openURL(
+								"https://www.youtube.com/channel/UCtMwtz4hRKr6WG_n8CisiDA/featured"
+							);
+						}}
+					>
+						{" "}
+						YouTube
+					</Text>
+					{","}
+					<Text
+						style={[styles.hyperlink, dstyles.text]}
 						onPress={() => {
 							Linking.openURL("https://www.instagram.com/easymalayalam/");
 						}}
 					>
 						{" "}
-						- Source {"\n"}
-					</Text>
+						Instagram
+					</Text>{" "}
+					{"\n"}
 				</Text>
-				<Text style={styles.text}>
-					4. Everyday Malayalam with Gokul
+				<Text style={dstyles.text}>
+					<Text style={dstyles.bold}>5. Everyday Malayalam</Text> Gokul,
+					Malayalee and polyglot creates short videos under 1 minute which are
+					helpful for conversational Malayalam. His media presence are
 					<Text
-						style={styles.hyperlink}
+						style={[styles.hyperlink, dstyles.text]}
 						onPress={() => {
 							Linking.openURL("https://www.instagram.com/everyday_malayalam/");
 						}}
 					>
 						{" "}
-						- Source {"\n"}
+						Instagram
 					</Text>
 				</Text>
 			</View>

@@ -11,9 +11,12 @@ import {
 	TouchableOpacity,
 } from "react-native";
 
+import { StackActions } from "@react-navigation/native";
+
 import Constants from "expo-constants";
 
 const Home = ({ navigation }) => {
+	console.log(navigation);
 	return (
 		<View style={styles.container}>
 			<TouchableOpacity
@@ -23,7 +26,7 @@ const Home = ({ navigation }) => {
 				<Text style={styles.buttonText}>Introduction</Text>
 			</TouchableOpacity>
 			<TouchableOpacity
-				onPress={() => navigation.navigate("Grammar")}
+				onPress={() => navigation.push("Grammar")}
 				style={styles.buttonContainer}
 			>
 				<Text style={styles.buttonText}>Most Used Grammar</Text>
