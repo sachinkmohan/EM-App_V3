@@ -15,8 +15,8 @@ const EMStack = createStackNavigator();
 
 const AppNavigator = () => {
 	return (
-		<EMStack.Navigator screenOptions={{ headerShown: false }}>
-			<EMStack.Screen name="Homes" component={Home} />
+		<EMStack.Navigator>
+			<EMStack.Screen name="Home" component={Home} />
 			<EMStack.Screen name="Intro" component={Introduction} />
 			<EMStack.Screen name="Category" component={Categories} />
 			<EMStack.Screen name="Confused" component={ConfusedLetters} />

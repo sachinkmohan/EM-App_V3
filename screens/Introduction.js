@@ -1,11 +1,23 @@
 import React from "react";
 
-import { View, Text, Button, StyleSheet, Image } from "react-native";
+import {
+	View,
+	Text,
+	Button,
+	StyleSheet,
+	Image,
+	Dimensions,
+} from "react-native";
+import { ScrollView } from "react-native-gesture-handler";
+
+import { dstyles } from "../styles/DefaultStyle";
+
+var screenWidth = Dimensions.get("window").width;
 
 const Introduction = ({ navigation }) => {
 	return (
 		<View style={styles.container}>
-			<Text>
+			<Text style={dstyles.text}>
 				Welcome all to the Easy Malayalam App! The App focuses on giving you
 				tips, necessary grammar, common mistakes, confusions while learning
 				Malayalam and a collection of resources to get you started. We are
@@ -17,14 +29,6 @@ const Introduction = ({ navigation }) => {
 				educational purposes! It's time to learn something now! Let's get
 				started.
 			</Text>
-			<Image
-				source={require("../assets/images/homes.jpg")}
-				style={{ height: "50%", width: "90%", justifyContent: "space-evenly" }}
-			/>
-			<Button
-				title="Get Started"
-				onPress={() => navigation.navigate("Category")}
-			/>
 		</View>
 	);
 };
@@ -38,6 +42,11 @@ const styles = StyleSheet.create({
 	},
 	item: {
 		flex: 1,
+	},
+	textA: {
+		fontSize: 17,
+		lineHeight: 25,
+		textAlign: "left",
 	},
 });
 
