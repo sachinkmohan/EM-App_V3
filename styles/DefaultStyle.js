@@ -13,7 +13,7 @@ const dstyles = StyleSheet.create({
 		textAlign: "left",
 	},
 	h3: {
-		fontSize: 20,
+		fontSize: 18,
 		fontWeight: "bold",
 	},
 	text: {

@@ -1,13 +1,6 @@
 import React from "react";
 
-import {
-	View,
-	Text,
-	Button,
-	Image,
-	StyleSheet,
-	Dimensions,
-} from "react-native";
+import { View, Text, Image, StyleSheet, Dimensions } from "react-native";
 import { ScrollView } from "react-native-gesture-handler";
 
 import { dstyles } from "../styles/DefaultStyle";
