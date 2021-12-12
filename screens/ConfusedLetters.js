@@ -8,7 +8,7 @@ var screenWidth = Dimensions.get("window").width;
 
 const ConfusedLetters = ({ navigation }) => {
 	return (
-		<ScrollView>
+		<ScrollView style={{ backgroundColor: "#fff" }}>
 			<View style={styles.movetoCenter}>
 				<Text style={dstyles.h1}>Most Confused Letters</Text>
 				<Text style={[dstyles.h2, dstyles.bold, styles.text]}>

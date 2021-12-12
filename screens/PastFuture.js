@@ -9,11 +9,15 @@ export default class PastFuture extends Component {
 			tableHead: ["Past", "Infinitive", "Future"],
 			tableData: [
 				["ചിരിച്ചു", "ചിരിക്കുക", "ചിരിക്കും"],
+				["കരഞ്ഞു", "കരയുക", "കരയും"],
 				["ചോദിച്ചു", "ചോദിക്കുക", "ചോദിക്കും"],
 				["പോയി", "പോവുക", "പോവും"],
 				["പറഞ്ഞു", "പറയുക", "പറയും"],
 				["വന്നു", "വരുക", "വരും"],
 				["കേട്ടു", "കേൾക്കുക", "കേൾക്കും"],
+				["കളിച്ചു", "കളിക്കുക", "കളിക്കും"],
+				["എഴുതി", "എഴുതുക", "എഴുത്തും"],
+				["പഠിച്ചു", "പഠിക്കുക", "പഠിക്കും"],
 			],
 		};
 	}
@@ -38,5 +42,5 @@ export default class PastFuture extends Component {
 const styles = StyleSheet.create({
 	container: { flex: 1, padding: 16, paddingTop: 30, backgroundColor: "#fff" },
 	head: { height: 40, backgroundColor: "#f1f8ff" },
-	text: { margin: 6 },
+	text: { fontSize: 18, margin: 6 },
 });

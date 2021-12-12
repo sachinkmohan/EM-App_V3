@@ -20,9 +20,22 @@ const dstyles = StyleSheet.create({
 		fontSize: 17,
 		textAlign: "left",
 		lineHeight: 25,
+		padding: 7,
 	},
 	bold: {
 		fontWeight: "bold",
+	},
+	container: {
+		flex: 1,
+		justifyContent: "center",
+		alignItems: "center",
+		backgroundColor: "#fff",
+	},
+	marginT: {
+		marginTop: 30,
+	},
+	paddingDS: {
+		padding: 10,
 	},
 });
 

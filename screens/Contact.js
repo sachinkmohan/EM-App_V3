@@ -18,8 +18,8 @@ var screenWidth = Dimensions.get("window").width;
 
 const Contact = ({ navigation }) => {
 	return (
-		<ScrollView>
-			<View style={styles.movetoCenter}>
+		<ScrollView style={{ backgroundColor: "#fff" }}>
+			<View style={dstyles.container}>
 				<Text style={[dstyles.text, styles.marginT, styles.borderA]}>
 					You can see more of our content on
 					<Text
