@@ -18,6 +18,10 @@ const Introduction = ({ navigation }) => {
 	return (
 		<ScrollView style={{ backgroundColor: "#fff" }}>
 			<View style={[dstyles.container, styles.marginT]}>
+				<Image
+					source={require("../assets/images/easy_malayalam.png")}
+					style={{ height: 320, width: "100%", resizeMode: "contain" }}
+				/>
 				<Text style={[dstyles.text]}>
 					<Text
 						style={{ fontSize: 19, fontWeight: "bold", fontStyle: "italic" }}
