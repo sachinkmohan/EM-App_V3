@@ -20,7 +20,7 @@ const AppNavigator = () => {
 			<EMStack.Screen name="Home" component={Home} />
 			<EMStack.Screen name="Intro" component={Introduction} />
 			<EMStack.Screen name="Category" component={Categories} />
-			<EMStack.Screen name="Confused" component={ConfusedLetters} />
+			<EMStack.Screen name="Letters" component={ConfusedLetters} />
 			<EMStack.Screen name="Grammar" component={MUsedGrammar} />
 			<EMStack.Screen name="Past and Future" component={PastFuture} />
 			<EMStack.Screen name="Best Movies" component={BestMovies} />

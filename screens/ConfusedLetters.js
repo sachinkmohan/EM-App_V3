@@ -10,7 +10,6 @@ const ConfusedLetters = ({ navigation }) => {
 	return (
 		<ScrollView style={{ backgroundColor: "#fff" }}>
 			<View style={styles.movetoCenter}>
-				<Text style={dstyles.h1}>Most Confused Letters</Text>
 				<Text style={[dstyles.h2, dstyles.bold, styles.text]}>
 					{"\n"} Letter's <Text style={{ fontSize: 30 }}>ല & ള </Text> {"\n"}
 				</Text>
@@ -86,7 +85,7 @@ const styles = StyleSheet.create({
 	text: {
 		paddingLeft: 15,
 		fontSize: 20,
-		color: "#0000ff",
+		color: "#006400",
 	},
 	movetoCenter: {
 		justifyContent: "center",

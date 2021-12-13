@@ -1,0 +1,7 @@
+{
+	"build": {
+		"production": {
+			"node": "14.18.2"
+		}
+	}
+}

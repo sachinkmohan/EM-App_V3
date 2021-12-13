@@ -1,6 +1,9 @@
 import React, { Component } from "react";
-import { StyleSheet, View } from "react-native";
+import { StyleSheet, View, Text } from "react-native";
+import { ScrollView } from "react-native-gesture-handler";
 import { Table, Row, Rows } from "react-native-table-component";
+
+import { dstyles } from "../styles/DefaultStyle";
 
 export default class PastFuture extends Component {
 	constructor(props) {
@@ -25,16 +28,22 @@ export default class PastFuture extends Component {
 	render() {
 		const state = this.state;
 		return (
-			<View style={styles.container}>
-				<Table borderStyle={{ borderWidth: 2, borderColor: "#c8e1ff" }}>
-					<Row
-						data={state.tableHead}
-						style={styles.head}
-						textStyle={styles.text}
-					/>
-					<Rows data={state.tableData} textStyle={styles.text} />
-				</Table>
-			</View>
+			<ScrollView style={{ backgroundColor: "#fff" }}>
+				<View style={styles.container}>
+					<Text style={dstyles.text}>
+						The table below describes the past and future tense of the most
+						commonly used verbs in everyday conversational Malayalam.
+					</Text>
+					<Table borderStyle={{ borderWidth: 2, borderColor: "#c8e1ff" }}>
+						<Row
+							data={state.tableHead}
+							style={styles.head}
+							textStyle={styles.text}
+						/>
+						<Rows data={state.tableData} textStyle={styles.text} />
+					</Table>
+				</View>
+			</ScrollView>
 		);
 	}
 }

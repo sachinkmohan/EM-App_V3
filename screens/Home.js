@@ -31,7 +31,7 @@ const Home = ({ navigation }) => {
 				<Text style={styles.buttonText}>Most Used Grammar</Text>
 			</TouchableOpacity>
 			<TouchableOpacity
-				onPress={() => navigation.navigate("Confused")}
+				onPress={() => navigation.navigate("Letters")}
 				style={styles.buttonContainer}
 			>
 				<Text style={styles.buttonText}>Most Confused Letters</Text>

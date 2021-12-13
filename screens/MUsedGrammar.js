@@ -9,7 +9,6 @@ const MUsedGrammar = ({ navigation }) => {
 	return (
 		<ScrollView style={{ backgroundColor: "#fff" }}>
 			<View style={[styles.container]}>
-				<Text style={dstyles.h1}>Most Used Grammar</Text>
 				<Text style={dstyles.h2}>
 					{"\n"} Ways to say no in Malayalam {"\n"}
 				</Text>
@@ -38,7 +37,7 @@ const MUsedGrammar = ({ navigation }) => {
 					style={{
 						fontSize: 20,
 						fontWeight: "bold",
-						color: "#0000ff",
+						color: "#964B00",
 						padding: 7,
 					}}
 				>
@@ -69,7 +68,7 @@ const MUsedGrammar = ({ navigation }) => {
 					style={{
 						fontSize: 20,
 						fontWeight: "bold",
-						color: "#0000ff",
+						color: "#964b00",
 						padding: 7,
 					}}
 				>

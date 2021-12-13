@@ -9,7 +9,7 @@ const dstyles = StyleSheet.create({
 	h2: {
 		fontSize: 22,
 		fontWeight: "bold",
-		color: "#0000ff",
+		color: "#006400",
 		textAlign: "left",
 	},
 	h3: {
