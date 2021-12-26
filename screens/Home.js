@@ -16,7 +16,6 @@ import { StackActions } from "@react-navigation/native";
 import Constants from "expo-constants";
 
 const Home = ({ navigation }) => {
-	console.log(navigation);
 	return (
 		<View style={styles.container}>
 			<TouchableOpacity
@@ -32,19 +31,19 @@ const Home = ({ navigation }) => {
 				<Text style={styles.buttonText}>Most Used Grammar</Text>
 			</TouchableOpacity>
 			<TouchableOpacity
-				onPress={() => navigation.navigate("Confused")}
+				onPress={() => navigation.navigate("Letters")}
 				style={styles.buttonContainer}
 			>
 				<Text style={styles.buttonText}>Most Confused Letters</Text>
 			</TouchableOpacity>
 			<TouchableOpacity
-				onPress={() => navigation.navigate("PastFuture")}
+				onPress={() => navigation.navigate("Past and Future")}
 				style={styles.buttonContainer}
 			>
 				<Text style={styles.buttonText}>Past and Future</Text>
 			</TouchableOpacity>
 			<TouchableOpacity
-				onPress={() => navigation.navigate("BestMovies")}
+				onPress={() => navigation.navigate("Best Movies")}
 				style={styles.buttonContainer}
 			>
 				<Text style={styles.buttonText}>Best Malayalam Movies</Text>

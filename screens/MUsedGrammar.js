@@ -7,9 +7,8 @@ import { dstyles, borders } from "../styles/DefaultStyle";
 
 const MUsedGrammar = ({ navigation }) => {
 	return (
-		<ScrollView>
-			<View style={styles.container}>
-				<Text style={dstyles.h1}>Most Used Grammar</Text>
+		<ScrollView style={{ backgroundColor: "#fff" }}>
+			<View style={[styles.container]}>
 				<Text style={dstyles.h2}>
 					{"\n"} Ways to say no in Malayalam {"\n"}
 				</Text>
@@ -29,18 +28,17 @@ const MUsedGrammar = ({ navigation }) => {
 					athu cheythilla means I didn't do it.
 				</Text>
 				<Text style={dstyles.text}>
-					<Text style={dstyles.h3}> {"\n"} 2. Venda or venda - </Text>
+					<Text style={dstyles.h3}> {"\n"} 3. Venda or venda - </Text>
 					is used to express when you don't want something. For eg., Enikku
 					choru venda means I don't need food.{"\n"}
 				</Text>
-				<Text style={dstyles.h2}>
-					{"\n"} Njan and Enikku - The Difference {"\n"}
-				</Text>
+				<Text style={dstyles.h2}>{"\n"} Njan and Enikku - The Difference</Text>
 				<Text
 					style={{
 						fontSize: 20,
 						fontWeight: "bold",
-						color: "#0000ff",
+						color: "#964B00",
+						padding: 7,
 					}}
 				>
 					Njan
@@ -70,7 +68,8 @@ const MUsedGrammar = ({ navigation }) => {
 					style={{
 						fontSize: 20,
 						fontWeight: "bold",
-						color: "#0000ff",
+						color: "#964b00",
+						padding: 7,
 					}}
 				>
 					Enikku
@@ -128,6 +127,9 @@ const styles = StyleSheet.create({
 	},
 	container: {
 		flex: 1,
+	},
+	paddingT: {
+		padding: 7,
 	},
 });
 export default MUsedGrammar;

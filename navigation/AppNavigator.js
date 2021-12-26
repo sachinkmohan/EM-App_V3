@@ -10,6 +10,7 @@ import PastFuture from "../screens/PastFuture";
 import MUsedGrammar from "../screens/MUsedGrammar";
 import Home from "../screens/Home";
 import BestMovies from "../screens/BestMovies";
+import Contact from "../screens/Contact";
 
 const EMStack = createStackNavigator();
 
@@ -19,10 +20,10 @@ const AppNavigator = () => {
 			<EMStack.Screen name="Home" component={Home} />
 			<EMStack.Screen name="Intro" component={Introduction} />
 			<EMStack.Screen name="Category" component={Categories} />
-			<EMStack.Screen name="Confused" component={ConfusedLetters} />
+			<EMStack.Screen name="Letters" component={ConfusedLetters} />
 			<EMStack.Screen name="Grammar" component={MUsedGrammar} />
-			<EMStack.Screen name="PastFuture" component={PastFuture} />
-			<EMStack.Screen name="BestMovies" component={BestMovies} />
+			<EMStack.Screen name="Past and Future" component={PastFuture} />
+			<EMStack.Screen name="Best Movies" component={BestMovies} />
 		</EMStack.Navigator>
 	);
 };
@@ -30,9 +31,16 @@ const AppNavigator = () => {
 const ResourceNavigator = () => {
 	return (
 		<EMStack.Navigator>
-			<EMStack.Screen name="Resource" component={Resources} />
+			<EMStack.Screen name="Resources" component={Resources} />
 		</EMStack.Navigator>
 	);
 };
 
-export { AppNavigator, ResourceNavigator };
+const ContactsNavigator = () => {
+	return (
+		<EMStack.Navigator>
+			<EMStack.Screen name="Contact Us" component={Contact} />
+		</EMStack.Navigator>
+	);
+};
+export { AppNavigator, ResourceNavigator, ContactsNavigator };

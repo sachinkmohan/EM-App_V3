@@ -1,0 +1,11 @@
+{
+  "build": {
+    "production": {
+      "node": "14.18.2"
+    }
+  },
+  "cli": {
+    "version": ">= 0.40.0",
+    "requireCommit": true
+  }
+}

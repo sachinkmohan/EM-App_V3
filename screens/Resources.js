@@ -7,8 +7,8 @@ import { dstyles, buttons } from "../styles/DefaultStyle";
 
 const Resources = ({ navigation }) => {
 	return (
-		<ScrollView>
-			<View>
+		<ScrollView style={{ backgroundColor: "#fff" }}>
+			<View style={{ flex: 1 }}>
 				<Text style={dstyles.h1}> Content Creators of Malayalam {"\n"}</Text>
 				<Text style={dstyles.text}>
 					<Text style={dstyles.bold}>1. Fluent in Malayalam -</Text> If you are
