@@ -7,6 +7,7 @@ import {
 	AppNavigator,
 	ResourceNavigator,
 	ContactsNavigator,
+	QuizNavigator
 } from "../navigation/AppNavigator";
 
 const Tab = createBottomTabNavigator();
@@ -32,6 +33,16 @@ const BottomTabNavigator = () => {
 					),
 				}}
 			/>
+			<Tab.Screen
+				name="Quiz"
+				component={QuizNavigator}
+				options={{
+					tabBarIcon: ({ size, color }) => (
+						<Icon name={"info-circle"} color={color} size={size} />
+					),
+				}}
+			/>
+			
 			<Tab.Screen
 				name="contact us"
 				component={ContactsNavigator}

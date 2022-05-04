@@ -1,9 +1,11 @@
 import React from "react";
 
 import { View, Text, Button, Image, StyleSheet } from "react-native";
+import FastImage from "react-native-fast-image";
 import { ScrollView } from "react-native-gesture-handler";
 
 import { dstyles, borders } from "../styles/DefaultStyle";
+
 
 const MUsedGrammar = ({ navigation }) => {
 	return (
@@ -131,5 +133,10 @@ const styles = StyleSheet.create({
 	paddingT: {
 		padding: 7,
 	},
+	image: {
+		height: 320,
+		width: '100%',
+		resizeMode: 'contain'
+	}
 });
 export default MUsedGrammar;

@@ -12,6 +12,8 @@ import Home from "../screens/Home";
 import BestMovies from "../screens/BestMovies";
 import Contact from "../screens/Contact";
 
+import quizScreen from '../screens/quiz/quizScreen'
+
 const EMStack = createStackNavigator();
 
 const AppNavigator = () => {
@@ -43,4 +45,12 @@ const ContactsNavigator = () => {
 		</EMStack.Navigator>
 	);
 };
-export { AppNavigator, ResourceNavigator, ContactsNavigator };
+
+const QuizNavigator = () => {
+	return (
+		<EMStack.Navigator>
+			<EMStack.Screen name="Quizd" component={quizScreen} />
+		</EMStack.Navigator>
+	);
+};
+export { AppNavigator, ResourceNavigator, ContactsNavigator, QuizNavigator };
